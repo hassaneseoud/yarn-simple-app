@@ -44,7 +44,7 @@ public class ApplicationMaster {
             }
         }
 
-        // Initialize clients to ResourceManager and NodeManagers
+        // Initialize clients to ResourceManager and NodeManagers:
         Configuration conf = new YarnConfiguration();
 
         AMRMClient<ContainerRequest> rmClient = AMRMClient.createAMRMClient();
